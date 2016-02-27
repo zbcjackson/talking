@@ -3,11 +3,11 @@ import { reduxReactRouter } from 'redux-router'
 import createHistory from 'history/lib/createBrowserHistory'
 import routes from '../routes'
 import thunk from 'redux-thunk'
-import api from '../middleware/api'
+import socket from '../middleware/socket'
 import rootReducer from '../reducers'
 
 const finalCreateStore = compose(
-  applyMiddleware(thunk, api),
+  applyMiddleware(thunk, socket),
   reduxReactRouter({ routes, createHistory })
 )(createStore)
 

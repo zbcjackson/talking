@@ -1,0 +1,39 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.hidden-on-mobile {
+  @media (max-width: 989px) {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+#footer-container {
+  padding-top: 15px;
+}
+
+/* Activity */
+.blog-post-header {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/activity_cover.jpg); 
+}
+.blog-post-header:after {
+  content: ' ';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); 
+}

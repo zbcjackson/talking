@@ -4,12 +4,12 @@ import DevTools from '../containers/DevTools'
 import createHistory from 'history/lib/createBrowserHistory'
 import routes from '../routes'
 import thunk from 'redux-thunk'
-import api from '../middleware/api'
+import socket from '../middleware/socket'
 import createLogger from 'redux-logger'
 import rootReducer from '../reducers'
 
 const finalCreateStore = compose(
-  applyMiddleware(thunk, api),
+  applyMiddleware(thunk, socket),
   reduxReactRouter({ routes, createHistory }),
   applyMiddleware(createLogger()),
   DevTools.instrument()

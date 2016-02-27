@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Talking</title>
+  <meta name="description" content="Google's material design UI components built with React.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type"text/javascript" src="http://192.168.11.23:1337/js/dependencies/sails.io.js"></script>
+  <script type"text/javascript">
+    io.sails.autoConnect = false;
+    var mySocket = io.sails.connect(“http://192.168.11.23:1337”)
+    window.onload = function(){
+      mySocket.get(‘/Auth/listen’, function (data) {
+        console.log(“superwolf”, data)
+        
+      });
+
+      mySocket.on(‘chatmessage’, function (data) {
+        console.log(‘User alert!’, data);
+      });
+    }
+  </script>
+  <script src="page.js"></script>
+</body>
+
+</html>
