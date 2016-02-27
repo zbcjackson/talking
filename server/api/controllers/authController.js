@@ -8,6 +8,12 @@
 module.exports = {
   listen:function(req, res){
     ChatMessage.watch(req)
-    res.ok()
+    if(req.isSocket)
+    {
+      res.ok()
+    }
+    else{
+      res.end()
+    }
   }
 };
