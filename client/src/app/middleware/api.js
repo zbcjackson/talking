@@ -3,7 +3,7 @@ import { camelizeKeys } from 'humps'
 import 'isomorphic-fetch'
 import values from 'lodash/object/values'
 
-const API_ROOT = `${window.config.apiUrl}/`
+// const API_ROOT = `${window.config.apiUrl}/`
 
 // Fetches an API response and normalizes the result JSON according to schema.
 // This makes every API response have the same shape, regardless of how nested it was.

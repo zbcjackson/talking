@@ -5,8 +5,10 @@ class Message extends React.Component {
     const {message} = this.props;
     return (
       <div>
-        <span>message.content</span>      
+        <span>{message.content}</span>      
       </div>
     )
   }
 }
+
+export default Message

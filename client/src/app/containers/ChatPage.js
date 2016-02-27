@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import Messages from '../components/messages'
 import Say from '../components/say'
-import * as ChatActions from '../actions/chat';
+import * as ChatActions from '../actions/chat'
 
 class ChatPage extends React.Component {
   render() {
@@ -27,4 +27,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(ChatActions, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ActivityPage)
+export default connect(mapStateToProps, mapDispatchToProps)(ChatPage)
