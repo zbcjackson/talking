@@ -16,7 +16,7 @@ module.exports = {
     port: 8080        //Port Number
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'src/www'),
     filename: 'page.js',
     publicPath: 'src/www/'
   },
