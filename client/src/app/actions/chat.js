@@ -4,7 +4,16 @@ function sendMessage(content){
     [SOCKET]: {
       types: ['SEND_MESSAGE_REQUEST', 'SEND_MESSAGE_SUCCESS', 'SEND_MESSAGE_FAILURE'],
       url: '/ChatMessage',
-      data: {content}
+      data: {
+        content
+        , name: "青山老妖" 
+        , avatar:"http://sailsjs.org/images/bookCover.png"
+        , source: 0
+        , channelId: "12"
+        , userId: "134"
+        , type: 1
+        , extend: JSON.stringify({})
+      }
     }
   }
 

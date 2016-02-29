@@ -8,8 +8,14 @@
 module.exports = {
   autoWatch: true,
   attributes: {
-
-    content : { type: 'string' }
+    source: { type: 'int' },
+    channelId : { type: 'string' },
+    userId : { type: 'string' },
+    name : { type: 'string' },
+    avatar : { type: 'string' },    
+    content : { type: 'string' },
+    type: {type: 'int' },
+    extend: {type: 'string'}
   }
 };
 

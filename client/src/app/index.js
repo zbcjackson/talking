@@ -9,7 +9,7 @@ import {say, receiveMessage, loadMessages} from './actions/chat'
 injectTapEventPlugin();
 
 const store = configureStore()
-var mySocket = window.mySocket = io.sails.connect("http://192.168.11.23:1337")
+var mySocket = window.mySocket = io.sails.connect("http://127.0.0.1:1337")
 mySocket.get('/Auth/listen', function (data) {
   mySocket.get("/ChatMessage?sort=id desc&limit=10", function(messages){
     store.dispatch(loadMessages(messages))

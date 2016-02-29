@@ -861,6 +861,77 @@
         "createdAt": "2016-02-27T06:47:01.476Z",
         "updatedAt": "2016-02-27T06:47:01.476Z",
         "id": 131
+      },
+      {
+        "content": "aaaa",
+        "createdAt": "2016-02-27T07:05:22.778Z",
+        "updatedAt": "2016-02-27T07:05:22.778Z",
+        "id": 132
+      },
+      {
+        "content": "saedf",
+        "name": "青山老妖",
+        "avatar": "http://sailsjs.org/images/bookCover.png",
+        "source": "0",
+        "channelId": "12",
+        "userId": "134",
+        "type": "1",
+        "extend": "{}",
+        "createdAt": "2016-02-27T07:50:53.691Z",
+        "updatedAt": "2016-02-27T07:50:53.691Z",
+        "id": 133
+      },
+      {
+        "content": "有意见？",
+        "name": "青山老妖",
+        "avatar": "http://sailsjs.org/images/bookCover.png",
+        "source": "0",
+        "channelId": "12",
+        "userId": "134",
+        "type": "1",
+        "extend": "{}",
+        "createdAt": "2016-02-27T09:45:33.577Z",
+        "updatedAt": "2016-02-27T09:45:33.577Z",
+        "id": 134
+      },
+      {
+        "content": "假假按揭啊就",
+        "name": "青山老妖",
+        "avatar": "http://sailsjs.org/images/bookCover.png",
+        "source": "0",
+        "channelId": "12",
+        "userId": "134",
+        "type": "1",
+        "extend": "{}",
+        "createdAt": "2016-02-27T09:46:14.976Z",
+        "updatedAt": "2016-02-27T09:46:14.976Z",
+        "id": 135
+      },
+      {
+        "content": "aaaaaa",
+        "name": "青山老妖",
+        "avatar": "http://sailsjs.org/images/bookCover.png",
+        "source": "0",
+        "channelId": "12",
+        "userId": "134",
+        "type": "1",
+        "extend": "{}",
+        "createdAt": "2016-02-29T14:48:21.885Z",
+        "updatedAt": "2016-02-29T14:48:21.885Z",
+        "id": 136
+      },
+      {
+        "content": "bbbbb",
+        "name": "青山老妖",
+        "avatar": "http://sailsjs.org/images/bookCover.png",
+        "source": "0",
+        "channelId": "12",
+        "userId": "134",
+        "type": "1",
+        "extend": "{}",
+        "createdAt": "2016-02-29T14:48:30.230Z",
+        "updatedAt": "2016-02-29T14:48:30.230Z",
+        "id": 137
       }
     ]
   },
@@ -883,8 +954,17 @@
       }
     },
     "channel": {
-      "id": {
+      "sessionId": {
         "type": "string"
+      },
+      "applicationId": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
       },
       "createdAt": {
         "type": "datetime"
@@ -894,7 +974,28 @@
       }
     },
     "chatmessage": {
+      "source": {
+        "type": "string"
+      },
+      "channelId": {
+        "type": "string"
+      },
+      "userId": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
       "content": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "extend": {
         "type": "string"
       },
       "id": {
@@ -917,7 +1018,7 @@
       "id": 12
     },
     "chatmessage": {
-      "id": 131
+      "id": 137
     }
   }
 }

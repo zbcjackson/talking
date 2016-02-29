@@ -8,8 +8,8 @@
 module.exports = {
 
   attributes: {
-
-    id : { type: 'string' }
+    sessionId : { type: 'string' },
+    applicationId: { type: 'string'},
   }
 };
 
